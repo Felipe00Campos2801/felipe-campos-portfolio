@@ -44,7 +44,7 @@ body {
     font-weight: 600;
 }
 
-/* Linha Superior Estética */
+/* Linha Superior*/
 .top-lighting-line {
     position: fixed;
     top: 0;
@@ -63,7 +63,7 @@ body {
     padding: 0 24px;
 }
 
-/* Grid Principal (Otimizado para Responsividade com Flex-Wrap adaptável no futuro) */
+/* Grid Principal*/
 .grid-2 {
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
@@ -157,7 +157,6 @@ nav ul li a:hover {
     border-bottom: 1px solid var(--border-color);
 }
 
-/* Hero & Introdução */
 .badge {
     display: inline-block;
     font-size: 0.75rem;
@@ -312,7 +311,7 @@ h1 {
     font-size: 1rem;
 }
 
-/* Cards do Portfólio (Autoajustáveis e Responsivos) */
+/* Cards do Portfólio */
 .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -476,12 +475,11 @@ footer {
     border-top: 1px solid var(--border-color);
 }
 
-/* --- REGRAS DE RESPONSIVIDADE (MEDIA QUERIES) --- */
 
 /* Ajuste para Tablets e Notebooks Pequenos */
 @media (max-width: 992px) {
     .grid-2 {
-        grid-template-columns: 1fr; /* Transforma em coluna única */
+        grid-template-columns: 1fr;
         gap: 40px;
     }
 
@@ -493,7 +491,7 @@ footer {
 /* Ajuste para Dispositivos Móveis (Celulares) */
 @media (max-width: 768px) {
     header {
-        position: static; /* Remove o fixo para economizar espaço de tela útil no celular */
+        position: static;
     }
 
     .nav-container {
@@ -514,7 +512,7 @@ footer {
     }
 
     .section {
-        padding: 60px 0; /* Diminui os grandes espaçamentos verticais no celular */
+        padding: 60px 0;
     }
 
     h1 {
@@ -527,15 +525,15 @@ footer {
     }
 
     form {
-        padding: 25px 20px; /* Reduz margens internas do formulário */
+        padding: 25px 20px; 
     }
 
     .cta-buttons a {
-        width: 100%; /* Botões ocupam largura total para facilitar o clique com o polegar */
+        width: 100%; 
     }
 }
 
-/* Ajustes finos para telas muito pequenas */
+/* Ajustes para telas muito pequenas */
 @media (max-width: 480px) {
     h1 {
         font-size: 1.8rem;
